@@ -13,5 +13,10 @@ namespace Module1Exercise1
         {
 
         }
+        protected void btnPlay_Click(object sender, EventArgs e)
+        {
+            // TODO 2.4 Set the text of lblNowPlaying to display "Now playing <favorite song>"
+            lblNowPlaying.Text = "Now playing 嘘月 - Yorushika";
+        }
     }
 }

@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Module2Topic1.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title> Master Page </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #ddd;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="Exercise0.aspx">Exercise 0</a></li>
+                        <li><a href="Exercise1.aspx">Exercise 1</a></li>
+                        <li><a href="Exercise2.aspx">Exercise 2</a></li>
+                        <li><a href="Exercise3.aspx">Exercise 3</a></li>
+                        <li><a href="Exercise4.aspx">Exercise 4</a></li>
+                        <li><a href="Exercise5.aspx">Exercise 5</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+            <footer>
+                Copyright <%: DateTime.Now.Year %> Adriel Groyon
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

@@ -12,3 +12,66 @@
 <%-- * How would you compare plain HTML to ASP.NET WebForms --%>
 <%-- * The code behind (C#) and JavaScript seem to share many use cases. When should you implement logic in the code behind and when should you implement logic in JavaScript? Provide examples. --%>
 <%-- * Explain what post backs are. --%>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server" class="container">
+        <h1>My Reflection</h1>
+        <h2>How would you compare plain HTML to ASP.NET WebForms?</h2>
+        <p>
+            Plain HTML provides the basic structure and content of a web page, 
+            but it lacks server-side processing capabilities and dynamic interactivity. 
+            On the other hand, ASP.NET WebForms allow for the creation of dynamic web 
+            applications with server-side processing, rich controls, and built-in state 
+            management features.
+        </p>
+        
+        <h2>The code behind (C#) and JavaScript seem to share many use cases. When should you implement logic in the code behind and when should you implement logic in JavaScript? Provide examples.</h2>
+        <p>
+            Logic should be implemented in the code-behind (C#) when it requires server-side 
+            resources, complex business rules, or security-related operations. For example, 
+            handling form submissions, accessing databases, or performing authentication checks. 
+            Conversely, JavaScript is ideal for client-side interactions, such as user interface
+            enhancements, form validation, and dynamic content updates without requiring server 
+            interaction.
+        </p>
+        
+        <h2>Explain what postbacks are.</h2>
+        <p>
+            Postbacks are a mechanism in ASP.NET WebForms where the entire page is submitted to 
+            the server for processing. This includes sending form data, control values, and view 
+            state to the server. The server processes the request, performs necessary actions, and 
+            sends a response back to the client. Postbacks enable server-side processing and 
+            stateful interactions in ASP.NET WebForms applications.
+        </p>
+    </form>
+</body>
+</html>
+
